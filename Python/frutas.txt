@@ -1,0 +1,16 @@
+MANGA
+UVA
+PERA
+MELANCIA
+LARANJA
+TOMATE
+JABOTICABA
+COCO
+SAIR
+laranja
+mamao
+uva
+pera
+melancia
+jaboticaba
+coco

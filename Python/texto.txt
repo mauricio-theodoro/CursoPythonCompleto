@@ -1,0 +1,15 @@
+Leitura de Arquivos
+
+Para o conteudo de um arquivo em Python, utilizamos a função integrada open(),
+que significa 'abrir'
+
+open() -> Na forma mais simples de utlização nós passamos apenas um parâmetro
+de entrada, que neste caso é o caminho para o arquivo a ser lido. Essa função
+retorna um _io.TextIOWrapper e é com ele que trabalhamos então.
+
+http://docs.python.org/3/library/functions.html#open
+
+# OBS: Por padrão, a função open() abre o aruqivo para leitura. Este arquivo deve
+existir, ou então teremos o erro FileNotFoundError
+
+mode r -> Modo de Leitura. r -> read() -> ler
