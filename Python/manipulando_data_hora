@@ -1,0 +1,79 @@
+"""
+Manipulando Data e Hora
+
+Python tem um módulo built-in (integrado) para se trabalhar com data e hora
+chamado datetime
+
+import datetime
+
+print(dir(datetime))
+
+print(datetime.MAXYEAR)
+
+print(datetime.MINYEAR)
+
+# Retorna a data e hora corrente
+print(datetime.datetime.now())
+
+# datetime.datetime(year, month, day, hour, minite, second, microsecond)
+print(repr(datetime.datetime.now()))
+
+# replace() para fazer ajustes na data/hora
+
+inicio = datetime.datetime.now()
+print(inicio)
+
+#alterar o horario para 16 horas, 0 minutos, 0 second, 0 microsecond
+
+inicio = inicio.replace(hour=16, minute=0, second=0, microsecond=0)
+
+import datetime
+
+# datetime.datetime(year, month, day, hour, minite, second, microsecond)
+# print(repr(datetime.datetime.now()))
+
+# replace() para fazer ajustes na data/hora
+
+inicio = datetime.datetime.now() # 2025-01-27 15:43:27.957042
+print(inicio)
+
+#alterar o horario para 16 horas, 0 minutos, 0 second, 0 microsecond
+
+inicio = inicio.replace(year=2023, hour=15, minute=0, second=0, microsecond=0)
+
+print(inicio)
+
+# Recebendo dados do usuário e convertendo para data
+
+import datetime
+
+evento = datetime.datetime(2021, 1, 1, 0)
+
+print(type(evento))
+
+print(type('31/12/2023'))
+print(evento)
+
+nascimento = input(f'Informe a dta de nascimento: (dd/mm/yyyy):')
+nascimento = nascimento.split('/')
+
+nascimento = datetime.datetime(int(nascimento[2]), int(nascimento[1]), int(nascimento[0]))
+print(nascimento)
+
+"""
+
+import datetime
+
+evento = datetime.datetime.now()
+
+# Acessando individual dos elementos de data e hora
+
+print(evento.year)
+print(evento.month)
+print(evento.day)
+print(evento.hour)
+print(evento.minute)
+print(evento.second)
+print(evento.microsecond)
+
+print(dir(evento))
